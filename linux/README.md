@@ -31,11 +31,11 @@ Currently using:
 
 3. Things can go wrong after installation (for Debian)
 
-    - `apt install' won't work because you're not one of the sudoers
+    - `apt install` won't work because you're not one of the sudoers
 
         - the fix: `sudo usermod -aG sudo [username]`
 
-    - 'apt install' works but throw the cdrom error
+    - `apt install` works but throw the cdrom error
 
         - [Resource](https://my.velocihost.net/knowledgebase/29/Fix-the-apt-get-install-error-Media-change-please-insert-the-disc-labeled--on-your-Linux-VPS.html)
 
