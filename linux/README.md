@@ -40,3 +40,14 @@ Currently using:
         - [Resource](https://my.velocihost.net/knowledgebase/29/Fix-the-apt-get-install-error-Media-change-please-insert-the-disc-labeled--on-your-Linux-VPS.html)
 
         - comment out something like: deb cdrom:[Debian GNU/Linux 7.0.0 _Wheezy_ - Official amd64 CD Binary-1 20130504-14:44]/ wheezy main in sources.list file
+        
+4. Set up Firewall using ufw
+
+    - `apt install ufw` install user friendly firewall
+    - `sudo ufw allow ssh` to allow ssh for things like github
+    - `sudo ufw status` check status
+5. Speed up the boot time
+
+    - `sudo vi /etc/default/grub` update the grub file
+    - set `GRUB_TIMEOUT=0`; then save and exit
+    - `sudo update-grub` update grub
